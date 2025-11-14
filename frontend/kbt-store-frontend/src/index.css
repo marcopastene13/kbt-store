@@ -1,18 +1,38 @@
 body {
+  min-height: 100vh;
+  margin: 0;
   background-color: #212529;
   color: #FFFFFF;
 }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .btn-primary {
   background-color: #2A7FFF;
   border-color: #2A7FFF;
 }
+
 .btn-primary:hover, .btn-primary:focus {
   background-color: #FFD700;
   border-color: #FFD700;
   color: #212529;
 }
+
 .card {
   background: #FFFFFF;
   color: #212529;
   border: 1px solid #CED4DA;
+}
+
+.footer {
+  width: 100vw;
+}
+.footer a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: #2A7FFF;
 }
