@@ -92,7 +92,7 @@ const Homepage = () => {
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">💳</div>
-              <h3>Pagos Seguros</h3>
+              <h3>Pago Seguros</h3>
               <p>Múltiples formas de pago con encriptación</p>
             </div>
             <div className="benefit-card">
