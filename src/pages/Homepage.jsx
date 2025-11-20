@@ -27,8 +27,6 @@ const Homepage = () => {
 
   return (
     <div className="homepage">
-      </section>
-
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
@@ -121,4 +119,4 @@ const Homepage = () => {
               </button>
             </form>
             {emailSubmitted && (
-              <p className="success-message">✓ Gracias por suscribirse</p>
+              <p className="success-message">Gracias por suscribirse</p>
