@@ -1,33 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/homepage.css';
-import ProductCard from '../components/ProductCard';
-import products from '../data/products.json';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/homepage.css";
+import ProductCard from "../components/ProductCard";
+import products from "../data/products.json";
 
 const Homepage = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-  
+
   const featuredProducts = products.slice(0, 3);
   const categories = [
-    { id: 1, name: 'Electrónica', color: 'category-electronics' },
-    { id: 2, name: 'Moda', color: 'category-fashion' },
-    { id: 3, name: 'Hogar', color: 'category-home' },
-    { id: 4, name: 'Deportes', color: 'category-sports' }
+    { id: 1, name: "Electrónica", color: "category-electronics" },
+    { id: 2, name: "Moda", color: "category-fashion" },
+    { id: 3, name: "Hogar", color: "category-home" },
+    { id: 4, name: "Deportes", color: "category-sports" },
   ];
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
     if (email) {
       setEmailSubmitted(true);
-      setEmail('');
+      setEmail("");
       setTimeout(() => setEmailSubmitted(false), 3000);
     }
   };
 
   return (
     <div className="homepage">
-      {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
           <h1>Bienvenido a KBT Store</h1>
@@ -43,7 +42,10 @@ const Homepage = () => {
         <h2 className="section-title">CATEGORÍAS</h2>
         <div className="categories-grid">
           {categories.map((category) => (
-            <div key={category.id} className={`category-card ${category.color}`}>
+            <div
+              key={category.id}
+              className={`category-card ${category.color}`}
+            >
               <div className="category-overlay">
                 <h3>{category.name}</h3>
                 <Link to="/catalog" className="category-link">
@@ -58,7 +60,9 @@ const Homepage = () => {
       {/* Productos Destacados */}
       <section className="featured-products container">
         <h2 className="section-title">NUESTROS PRODUCTOS DESTACADOS</h2>
-        <p className="section-subtitle">Los mejores productos seleccionados para ti</p>
+        <p className="section-subtitle">
+          Los mejores productos seleccionados para ti
+        </p>
         <div className="products-grid">
           {featuredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
@@ -95,16 +99,19 @@ const Homepage = () => {
               <div className="benefit-icon">🔄</div>
               <h3>Devoluciones Fáciles</h3>
               <p>Devuelve en 30 días si no estás satisfecho</p>
-
-      </div>
-    </section>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Newsletter Section */}
       <section className="newsletter-section">
         <div className="container">
           <div className="newsletter-content">
             <h2>Suscríbete a Nuestro Newsletter</h2>
-            <p>Recibe ofertas exclusivas y promociones directamente en tu correo</p>
+            <p>
+              Recibe ofertas exclusivas y promociones directamente en tu correo
+            </p>
             <form onSubmit={handleNewsletterSubmit} className="newsletter-form">
               <input
                 type="email"
