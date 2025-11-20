@@ -1,0 +1,23 @@
+.catalog {
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  min-height: 80vh;
+}
+
+.category-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-filters .btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    padding: 40px 20px;
+  }
+}

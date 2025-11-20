@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "name": "Auriculares Inalambricos Air Pods Max",
+    "price": 32990,
+    "images": [
+      "https://d39ru7awumhhs2.cloudfront.net/chile/products/25789/1718761476auri%201.webp",
+      "https://d39ru7awumhhs2.cloudfront.net/chile/products/25789/1718761476auri%206.webp",
+      "https://d39ru7awumhhs2.cloudfront.net/chile/products/25789/1718761476auri%204.webp",
+      "https://d39ru7awumhhs2.cloudfront.net/chile/products/25789/1718761476auri%205.webp"
+    ],
+    "category": "electrónica",
+    "description": "Apple Air Pods\n\nCaracterísticas Principales:\n• Diseño: Auriculares sobre la oreja (over-ear) con diadema de acero inoxidable y almohadillas de espuma viscoelástica\n• Conectividad: Bluetooth 5.0 para conexión inalámbrica\n• Modo de Transparencia: Permite escuchar el entorno sin quitarse los auriculares\n• Audio Espacial: Compatible con contenido con seguimiento dinámico de la cabeza para sonido envolvente\n• Ecualización Adaptativa: Ajusta el sonido en tiempo real basado en el ajuste y sellado de las almohadillas\n• Controles: Corona digital para volumen, reproducción y llamadas, botón de control de ruido\n• Batería: Hasta 4 horas de reproducción con ANC y audio espacial activados\n• Carga Rápida: 5 minutos de carga proporcionan alrededor de 1.5 horas de reproducción",
+    "stock": 10,
+    "link" : "https://app.dropi.cl/dashboard/product-details/25789/auriculares-inalambricos-air-pods"
+  },
+  {
+    "id": 2,
+    "name": "Producto Premium 2",
+    "price": 39999,
+    "images": [
+      "https://via.placeholder.com/500x500?text=Producto2Vista1",
+      "https://via.placeholder.com/500x500?text=Producto2Vista2",
+      "https://via.placeholder.com/500x500?text=Producto2Vista3"
+    ],
+    "category": "accesorios",
+    "description": "Descripción detallada del producto 2. Tecnología de punta.",
+    "stock": 15
+  },
+  {
+    "id": 3,
+    "name": "Producto Premium 3",
+    "price": 19999,
+    "images": [
+      "https://via.placeholder.com/500x500?text=Producto3Vista1",
+      "https://via.placeholder.com/500x500?text=Producto3Vista2",
+      "https://via.placeholder.com/500x500?text=Producto3Vista3",
+      "https://via.placeholder.com/500x500?text=Producto3Vista4",
+      "https://via.placeholder.com/500x500?text=Producto3Vista5"
+    ],
+    "category": "electrónica",
+    "description": "Descripción detallada del producto 3. Diseño elegante.",
+    "stock": 8
+  },
+  {
+    "id": 4,
+    "name": "Producto Premium 4",
+    "price": 49999,
+    "images": [
+      "https://via.placeholder.com/500x500?text=Producto4Vista1",
+      "https://via.placeholder.com/500x500?text=Producto4Vista2"
+    ],
+    "category": "accesorios",
+    "description": "Descripción detallada del producto 4. Premium quality.",
+    "stock": 12
+  },
+  {
+    "id": 5,
+    "name": "Producto Premium 5",
+    "price": 34999,
+    "images": [
+      "https://via.placeholder.com/500x500?text=Producto5Vista1",
+      "https://via.placeholder.com/500x500?text=Producto5Vista2",
+      "https://via.placeholder.com/500x500?text=Producto5Vista3"
+    ],
+    "category": "electrónica",
+    "description": "Descripción detallada del producto 5. Modelo exclusivo.",
+    "stock": 7
+  },
+  {
+    "id": 6,
+    "name": "Producto Premium 6",
+    "price": 24999,
+    "images": [
+      "https://via.placeholder.com/500x500?text=Producto6Vista1",
+      "https://via.placeholder.com/500x500?text=Producto6Vista2",
+      "https://via.placeholder.com/500x500?text=Producto6Vista3",
+      "https://via.placeholder.com/500x500?text=Producto6Vista4"
+    ],
+    "category": "accesorios",
+    "description": "Descripción detallada del producto 6. Garantía incluida.",
+    "stock": 20
+  }
+]
