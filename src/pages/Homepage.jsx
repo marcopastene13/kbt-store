@@ -27,15 +27,6 @@ const Homepage = () => {
 
   return (
     <div className="homepage">
-      {/* Banner Promocional */}
-      <section className="promo-banner">
-        <div className="promo-content">
-          <h2>OBTÉN UN 5% DE DESCUENTO</h2>
-          <p>En tu primera compra con el código: BIENVENIDA</p>
-          <Link to="/catalog" className="btn btn-light">
-            Comprar Ahora
-          </Link>
-        </div>
       </section>
 
       {/* Hero Section */}
@@ -131,26 +122,3 @@ const Homepage = () => {
             </form>
             {emailSubmitted && (
               <p className="success-message">✓ Gracias por suscribirse</p>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <h2>¿Necesitas Ayuda?</h2>
-        <p>Estamos aquí para asistirte</p>
-        <div className="cta-buttons">
-          <Link to="/contact" className="btn btn-light btn-lg">
-            Contacta con Nosotros
-          </Link>
-          <a href="https://wa.me/" className="btn btn-outline-light btn-lg">
-            WhatsApp
-          </a>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default Homepage;
