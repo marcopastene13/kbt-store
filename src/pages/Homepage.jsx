@@ -95,10 +95,9 @@ const Homepage = () => {
               <div className="benefit-icon">🔄</div>
               <h3>Devoluciones Fáciles</h3>
               <p>Devuelve en 30 días si no estás satisfecho</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      </div>
+    </section>
 
       {/* Newsletter Section */}
       <section className="newsletter-section">
@@ -120,3 +119,12 @@ const Homepage = () => {
             </form>
             {emailSubmitted && (
               <p className="success-message">Gracias por suscribirse</p>
+            )}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Homepage;
