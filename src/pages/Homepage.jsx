@@ -88,7 +88,7 @@ const Homepage = () => {
             <div className="benefit-card">
               <div className="benefit-icon">💯</div>
               <h3>Calidad Garantizada</h3>
-              <p>Productos originales con garantía verificada</p>
+              <p>Productos con garantía verificada</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-icon">💳</div>
