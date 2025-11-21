@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { CartProvider } from './context/CartContext';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Cart from './components/Cart';
-import Homepage from './pages/Homepage';
-import Catalog from './pages/Catalog';
-import Contact from './pages/Contact';
-import Checkout from './pages/Checkout';
-import ProductDetail from './pages/ProductDetail';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Cart from "./components/Cart";
+import Homepage from "./pages/Homepage";
+import Catalog from "./pages/Catalog";
+import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path='/checkout' element={<Checkout />} />
+              <Route path="/checkout" element={<Checkout />} />
             </Routes>
           </main>
           <Cart />
