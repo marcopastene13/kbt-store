@@ -127,7 +127,10 @@ const Homepage = () => {
             {emailSubmitted && (
               <p className="success-message">Gracias por suscribirse</p>
             )}
-          </div>
+          </div>echo '=== VERIFICANDO IMPORTS EN APP.JSX ===' && head -15 src/App.jsx
+          echo '\n=== RUTA EN APP.JSX ===' && grep -n 'checkout' src/App.jsx && echo '\n=== CHECKOUT.JSX EXISTE ===' && ls -la src/pages/Checkout.jsx && echo '\n=== CART.JSX LINK ===' && grep -A 2 'Ir al Checkout' src/components/Cart.jsx
+
+          
         </div>
       </section>
     </div>
