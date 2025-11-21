@@ -216,7 +216,7 @@ const Checkout = () => {
             console.log('Dirección validada:', coordinates);
             setFormData({...formData, coordenadas: coordinates});
           }}
-        />            >
+        />            
                     </div>
 <button type="submit" className="btn btn-primary">
               {loading ? 'Procesando...' : 'Confirmar Compra'}
@@ -232,9 +232,9 @@ const Checkout = () => {
                 <div key={item.id} className="summary-item">
                   <div className="item-details">
                     <p className="item-name">{item.nombre}</p>
-                    <p className="item-quantity">Cantidad: {item.cantidad}</p>
+                    <p className="item-quantity">Cantidad: {item.quantity}</p>
                   </div>
-                  <p className="item-price">${(item.precio * item.cantidad).toLocaleString('es-ES')}</p>
+                  <p className="item-price">${(item.price * item.quantity).toLocaleString('es-ES')}</p>
                 </div>
               ))}
             </div>

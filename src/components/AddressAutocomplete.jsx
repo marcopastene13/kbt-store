@@ -16,6 +16,17 @@ const AddressAutocomplete = ({ value, onChange, onAddressSelect }) => {
     }
   }, []);
 
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (window.google && !autocompleteService.current) {
+        autocompleteService.current = new window.google.maps.places.AutocompleteService();
+        geocoder.current = new window.google.maps.Geocoder();
+      }
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     onChange(inputValue);
