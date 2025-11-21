@@ -64,6 +64,8 @@ export const CartProvider = ({ children }) => {
     <CartContext.Provider value={{
       cart: cartItems,
         cartItems,
+      cat .env.local
+      npm install @react-google-maps/api @googlemaps/js-client-loader
       isCartOpen,
       setIsCartOpen,
       addToCart,

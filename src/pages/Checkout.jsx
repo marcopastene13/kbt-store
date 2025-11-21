@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import '../styles/checkout.css';
+import AddressAutocomplete from '../components/AddressAutocomplete';
 
 const Checkout = () => {
   const { cart, getTotalPrice, clearCart } = useContext(CartContext);
@@ -208,22 +209,16 @@ const Checkout = () => {
             
             <div className="form-group">
               <label htmlFor="direccion">Dirección de envío *</label>
-              <textarea
-                id="direccion"
-                name="direccion"
-                value={formData.direccion}
-                onChange={handleChange}
-                placeholder="Calle, número, apartamento, ciudad, región"
-                rows="3"
-                required
-              />
-            </div>
-            
-            <button 
-              type="submit" 
-              className="btn btn-primary btn-submit"
-              disabled={loading}
-            >
+<AddressAutocomplete
+          value={formData.direccion}
+          onChange={(value) => setFormData({...formData, direccion: value})}
+          onAddressSelect={(coordinates) => {
+            console.log('Dirección validada:', coordinates);
+            setFormData({...formData, coordenadas: coordinates});
+          }}
+        />            >
+                    </div>
+<button type="submit" className="btn btn-primary">
               {loading ? 'Procesando...' : 'Confirmar Compra'}
             </button>
           </form>
